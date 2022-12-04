@@ -64,6 +64,7 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  border: 0;
 }
 button {
   cursor: pointer;
@@ -127,6 +128,11 @@ button {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 0;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  height: 38px;
+  padding: 6px 22px;
 }
 .filters button:hover,
 .filters button:focus {
@@ -212,11 +218,6 @@ header {
 .section {
   padding: 94px 215px;
 }
-.benefits-box {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
 /* studio sections */
 /* 1-st section */
 .order-section {
@@ -234,7 +235,6 @@ header {
   margin: 0 auto 30px auto;
 }
 /* 2-nd section */
-
 .benefits-section .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -244,6 +244,11 @@ header {
 .benefits-section p {
   margin: 0;
   width: 270px;
+}
+.benefits-box {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 /* 3-rd section */
 .we-do-section {
@@ -287,6 +292,19 @@ header {
 .our-team-section p {
   margin: 10px 0 0;
 }
+/* portfolio section */
+/* filters */
+.filters ul {
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 0;
+margin: 0;
+}
+.filters li:not(:last-child) {
+margin-right: 8px;
+}
+
 /* footer */
 footer {
   padding: 60px 215px;
@@ -303,6 +321,25 @@ footer ul {
 }
 footer li:not(:last-child) {
 margin-bottom: 12px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 50px 0 0 ;
+}
+.card-set .item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid#EEEEEE;
+  /* flex-basis: calc((100% - 60px)/3);  */
+}
+.card-set h3 {
+margin: 20px 24px 0;
+}
+.card-set p {
+  margin: 0 24px;
 }
 /* body {
   display: flex;
