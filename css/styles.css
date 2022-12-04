@@ -113,7 +113,14 @@ button {
   letter-spacing: 0.03em;
   color: var(--gray-color);
 }
-
+.our-team-section li {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 368px;
+}
 .filters button {
   font-weight: 500;
   font-size: 16px;
@@ -164,6 +171,142 @@ footer .logo {
 .contact:focus {
   color: var(--brand-color);
 }
-.container {
-  display: flex;
+
+/* geometry styles */
+body {
+  width: 1600px;
 }
+.container {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+}
+.h-box {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header .item:not(:last-child) {
+  flex-grow: 45px;
+  margin-right: 50px;
+}
+.contacts-header > .item:not(:last-child) {
+  margin-right: 40px;
+}
+header {
+  border-bottom: 1px solid #ececec;
+  padding: 25px 215px;
+}
+.logo {
+  margin-right: 93px;
+}
+.navigation {
+  margin-right: 354px;
+}
+/* main */
+.section {
+  padding: 94px 215px;
+}
+.benefits-box {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+/* studio sections */
+/* 1-st section */
+.order-section {
+  padding: 200px 215px;
+}
+.order-button {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-left: 485px;
+  margin-right: 485px;
+}
+.order-section h1 {
+  width: 695px;
+  margin: 0 auto 30px auto;
+}
+/* 2-nd section */
+
+.benefits-section .item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-section h3 {
+  margin: 0 0 10px;
+}
+.benefits-section p {
+  margin: 0;
+  width: 270px;
+}
+/* 3-rd section */
+.we-do-section {
+  padding-top: 0;
+}
+.we-do-section h2 {
+  margin: 0 0 50px;
+}
+.we-do-section .container {
+  flex-direction: column;
+}
+.we-do-section ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.we-do-section .item:not(:last-child) {
+  margin-right: 30px;
+}
+/* 4-th section */
+.our-team-section .container {
+  flex-direction: column;
+}
+.our-team-section h2 {
+  margin: 0 0 50px;
+}
+.our-team-section ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.our-team-section img {
+  display: block;
+}
+.our-team-section li:not(:last-child) {
+  margin-right: 30px;
+}
+.our-team-section h3 {
+  margin: 30px 0 0;
+}
+.our-team-section p {
+  margin: 10px 0 0;
+}
+/* footer */
+footer {
+  padding: 60px 215px;
+}
+footer .logo {
+  margin: 0;
+}
+footer p {
+  margin: 28px 0 12px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer li:not(:last-child) {
+margin-bottom: 12px;
+}
+/* body {
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  margin: 0 auto;
+} */
