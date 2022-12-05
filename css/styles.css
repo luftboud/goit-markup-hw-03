@@ -180,12 +180,16 @@ footer .logo {
 
 /* geometry styles */
 body {
-  width: 1600px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .container {
   width: 1200px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 /* header */
 .header {
@@ -206,29 +210,31 @@ header .item:not(:last-child) {
 }
 header {
   border-bottom: 1px solid #ececec;
-  padding: 25px 215px;
 }
-.logo {
+header .logo {
   margin-right: 93px;
+  padding: 24px 0 25px;
 }
-.navigation {
-  margin-right: 354px;
+.iteractive-element {
+  padding: 32px 0;
+}
+.contacts-header {
+  margin-left: auto;
 }
 /* main */
 .section {
-  padding: 94px 215px;
+  padding: 94px 0;
 }
 /* studio sections */
 /* 1-st section */
 .order-section {
   padding: 200px 215px;
+  text-align: center;
 }
 .order-button {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-left: 485px;
-  margin-right: 485px;
 }
 .order-section h1 {
   width: 695px;
@@ -280,8 +286,8 @@ header {
   margin: 0;
   padding: 0;
 }
-.our-team-section img {
-  display: block;
+.our-team-section li {
+  padding-bottom: 30px;
 }
 .our-team-section li:not(:last-child) {
   margin-right: 30px;
@@ -295,55 +301,53 @@ header {
 /* portfolio section */
 /* filters */
 .filters ul {
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 0;
-margin: 0;
-}
-.filters li:not(:last-child) {
-margin-right: 8px;
-}
-
-/* footer */
-footer {
-  padding: 60px 215px;
-}
-footer .logo {
-  margin: 0;
-}
-footer p {
-  margin: 28px 0 12px;
-}
-footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
-footer li:not(:last-child) {
-margin-bottom: 12px;
+.filters li:not(:last-child) {
+  margin-right: 8px;
 }
 .card-set {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
-  margin: 50px 0 0 ;
+  margin: 50px 0 0;
 }
 .card-set .item {
   width: 370px;
-  height: 404px;
-  border: 1px solid#EEEEEE;
+
   /* flex-basis: calc((100% - 60px)/3);  */
 }
 .card-set h3 {
-margin: 20px 24px 0;
+  margin: 0 0 4px;
 }
 .card-set p {
-  margin: 0 24px;
+  margin: 0;
 }
-/* body {
-  display: flex;
-  flex-direction: column;
-  width: 1600px;
-  margin: 0 auto;
-} */
+.card-text {
+  border-right: 1px solid#EEEEEE;
+  border-bottom: 1px solid#EEEEEE;
+  border-left: 1px solid#EEEEEE;
+  padding: 20px 24px;
+}
+/* footer */
+footer {
+  padding: 60px;
+}
+footer address {
+  margin-top: 28px;
+}
+footer p {
+  margin: 0 0 12px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer li:not(:last-child) {
+  margin-bottom: 12px;
+}
