@@ -226,7 +226,7 @@ header .logo {
 /* studio sections */
 /* 1-st section */
 .order-section {
-  padding: 200px 215px;
+  padding: 200px 0;
   text-align: center;
 }
 .order-button {
@@ -334,7 +334,7 @@ header .logo {
 }
 /* footer */
 footer {
-  padding: 60px;
+  padding: 60px 0;
 }
 footer address {
   margin-top: 28px;
